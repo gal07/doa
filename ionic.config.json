@@ -1,5 +1,7 @@
 {
   "name": "doa",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }

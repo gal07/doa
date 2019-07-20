@@ -1,9 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { DoaHarianExtendPage } from '../doa-harian-extend/doa-harian-extend';
 
 /**
- * Generated class for the DoaharianPage page.
+ * Generated class for the DoaHarianExtendPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -11,22 +10,23 @@ import { DoaHarianExtendPage } from '../doa-harian-extend/doa-harian-extend';
 
 @IonicPage()
 @Component({
-  selector: 'page-doaharian',
-  templateUrl: 'doaharian.html',
+  selector: 'page-doa-harian-extend',
+  templateUrl: 'doa-harian-extend.html',
 })
-export class DoaharianPage {
+export class DoaHarianExtendPage {
+
+  ParamFromPrevious:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad DoaharianPage');
+    console.log('ionViewDidLoad DoaHarianExtendPage');
   }
-
-  Go(param){
-
-    this.navCtrl.push(DoaHarianExtendPage,{goto:param})
-
+  ionViewWillEnter(){
+   this.ParamFromPrevious = this.navParams.get('goto');
+   alert(this.ParamFromPrevious);
   }
 
 }

@@ -10,15 +10,23 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content class="pp">
 
-    <ion-slides pager>
 
-        <ion-slide style="background-color: white">
+    <ion-slides pager  >
+
+        <ion-slide  >
          
             <ion-card>
                 <!-- <img class="imgWudhu" src="../../assets/imgs/wudhu/1.png"/> -->
                 <ion-card-content>
+                    <!-- <button ion-button color="secondary" block > Play </button> -->
+                    <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='sebelum')">
+                      <ion-icon name="play"></ion-icon>
+                    </button>
+                    <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='sebelum')">
+                      <ion-icon name="refresh-circle"></ion-icon>
+                    </button>
                   <ion-card-title>
                      <h5>
                        Doa Sebelum Wudhu
@@ -37,7 +45,7 @@
 
         </ion-slide>
 
-        <ion-slide style="background-color: white">
+        <ion-slide  >
          
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/1.png"/>
@@ -55,7 +63,7 @@
 
         </ion-slide>
       
-        <ion-slide style="background-color:  white">
+        <ion-slide  >
          
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/2.png"/>
@@ -73,7 +81,7 @@
 
         </ion-slide>
       
-        <ion-slide style="background-color:  white">
+        <ion-slide  >
          
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/3.png"/>
@@ -91,7 +99,7 @@
 
         </ion-slide>
 
-        <ion-slide style="background-color:  white">
+        <ion-slide  >
          
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/4.png"/>
@@ -110,7 +118,7 @@
         </ion-slide>
 
 
-        <ion-slide style="background-color:  white">
+        <ion-slide  >
          
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/5.png"/>
@@ -130,7 +138,7 @@
         </ion-slide>
 
 
-        <ion-slide style="background-color:  white">
+        <ion-slide  >
          
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/6.png"/>
@@ -149,7 +157,7 @@
         </ion-slide>
 
 
-        <ion-slide style="background-color:  white">
+        <ion-slide >
          
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/7.png"/>
@@ -168,7 +176,7 @@
         </ion-slide>
 
 
-        <ion-slide style="background-color:  white">
+        <ion-slide  >
          
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/8.png"/>
@@ -186,11 +194,17 @@
 
         </ion-slide>
 
-        <ion-slide style="background-color: white">
+        <ion-slide  >
          
             <ion-card>
-                <!-- <img class="imgWudhu" src="../../assets/imgs/wudhu/1.png"/> -->
+                <!-- <img class="imgWudhu" src="../../assets/sounds/wudhu/sebelum.mp3"/> -->
                 <ion-card-content>
+                  <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='setelah')">
+                    <ion-icon name="play"></ion-icon>
+                  </button>
+                  <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='setelah')">
+                    <ion-icon name="refresh-circle"></ion-icon>
+                  </button>
                   <ion-card-title>
                      <h5>
                        Doa Sesudah Wudhu

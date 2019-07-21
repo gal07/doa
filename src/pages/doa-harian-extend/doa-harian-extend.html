@@ -6,13 +6,227 @@
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>doa-harian-extend</ion-title>
+    <ion-title>{{ ParamFromPrevious }}</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="pp">
 
-  <div *ngIf="ParamFromPrevious == 'sebelum_tidur'" > sebelum </div>
-  <div *ngIf="ParamFromPrevious == 'bangun_tidur'" > Bangun</div>
+  <div *ngIf="ParamFromPrevious == 'sebelum_tidur'" > 
+  
+      <ion-slides pager>
+          <ion-slide  >
+           
+              <ion-card>
+                  <img class="imgWudhu" src="../../assets/imgs/adab-sebelum-tidur.jpg"/>
+                  <ion-card-content>
+                      <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='sebelum')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='sebelum')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
+                    <ion-card-title>
+                       <h5>
+                         Doa Sebelum Tidur
+                        </h5>
+                      </ion-card-title>
+                    <p>
+                        بِسْمِكَ اللّهُمَّ اَحْيَا وَ بِسْمِكَ اَمُوْتُ
+                        <br><br>
+                        “Bismika Allahumma ahyaa wa bismika amuut”
+                        <br><br>
+                        “Dengan nama-Mu ya Allah aku hidup, dan dengan nama-Mu aku mati””.
+                    </p>
+  
+                  </ion-card-content>
+              </ion-card>
+  
+          </ion-slide>
+      </ion-slides>
+    
+  </div>
+
+  <div *ngIf="ParamFromPrevious == 'bangun_tidur'" >
+
+      <ion-slides pager>
+          <ion-slide  >
+           
+              <ion-card>
+                  <img class="imgWudhu" src="../../assets/imgs/bangun_tidur.jpg"/>
+                  <ion-card-content>
+                      <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='sebelum')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='sebelum')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
+                    <ion-card-title>
+                       <h5>
+                         Doa Bangun Tidur
+                        </h5>
+                      </ion-card-title>
+                    <p>
+                        اَلْحَمْدُ لِلَّهِ الَّذِيْ أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُوْرِ
+                        <br><br>
+                        “Alhamdullillahilladzi ahyaanaa bada maa amaatanaa wa ilaihin nushur”
+                        <br><br>
+                        “Segala puji bagi-Mu, ya Allah, yang telah menghidupkan kembali diriku setelah kematianku, dan hanya kepada-Nya nantinya kami semua akan dihidupkan kembali.” (HR.Ahmad, Bukhari, dan Muslim)”.
+                    </p>
+  
+                  </ion-card-content>
+              </ion-card>
+  
+          </ion-slide>
+      </ion-slides>
+
+  </div>
+
+  <div *ngIf="ParamFromPrevious == 'keluar_rumah'" >
+
+      <ion-slides pager>
+          <ion-slide  >
+           
+              <ion-card>
+                  <img class="imgWudhu" src="../../assets/imgs/doa_keluar_rumah.jpg"/>
+                  <ion-card-content>
+                      <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='keluar_rumah')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='keluar_rumah')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
+                    <ion-card-title>
+                       <h5>
+                         Doa Keluar Rumah
+                        </h5>
+                      </ion-card-title>
+                    <p>
+                        بِسْمِ اللهِ تَوَكَّلْتُ عَلَى اللهِ، لَا حَوْلَ وَلَا قُوَّةَ إِلَّا بِاللهِ
+                        <br><br>
+                        “Bismillahi, tawakkaltu ’alallah, laa haula wa laa quwwata illaa billaah”
+                        <br><br>
+                        “Dengan nama Allah, aku bertawakkal kepada Allah. Tiada daya dan kekuatan kecuali dengan Allah.”.
+                    </p>
+  
+                  </ion-card-content>
+              </ion-card>
+  
+          </ion-slide>
+      </ion-slides>
+
+  </div>
+
+  <div *ngIf="ParamFromPrevious == 'masuk_rumah'" >
+
+      <ion-slides pager>
+          <ion-slide  >
+           
+              <ion-card>
+                  <img class="imgWudhu" src="../../assets/imgs/doa_masuk_rumah.jpg"/>
+                  <ion-card-content>
+                      <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='masuk_rumah')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='masuk_rumah')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
+                    <ion-card-title>
+                       <h5>
+                         Doa Masuk Rumah
+                        </h5>
+                      </ion-card-title>
+                    <p>
+                        اَللّٰهُمَّ اِنِّىْ اَسْأَلُكَ خَيْرَالْمَوْلِجِ وَخَيْرَالْمَخْرَجِ بِسْمِ اللهِ وَلَجْنَا وَبِسْمِ اللهِ خَرَجْنَا وَعَلَى اللهِ رَبِّنَا تَوَكَّلْنَا
+                        <br><br>
+                        “Allahumma innii as-aluka khoirol mauliji wa khoirol makhroji bismillaahi wa lajnaa wa bismillaahi khorojnaa wa’alallohi robbina tawakkalnaa”
+                        <br><br>
+                        “Ya Allah, sesungguhnya aku mohon kepada-Mu baiknya tempat masuk dan baiknya tempat keluar dengan menyebut nama Allah kami masuk, dan dengan menyebut nama Allah kami keluar dan kepada Allah Tuhan kami, kami bertawakkal”.
+                    </p>
+  
+                  </ion-card-content>
+              </ion-card>
+  
+          </ion-slide>
+      </ion-slides>
+
+  </div>
+
+  <div *ngIf="ParamFromPrevious == 'masuk_kamar_mandi'" >
+
+    <ion-slides pager>
+        <ion-slide  >
+         
+            <ion-card>
+                <img class="imgWudhu" src="../../assets/imgs/masuk_kamar_mandi.jpg"/>
+                <ion-card-content>
+                    <!-- <button ion-button color="secondary" block > Play </button> -->
+                    <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='masuk_kamar_mandi')">
+                      <ion-icon name="play"></ion-icon>
+                    </button>
+                    <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='masuk_kamar_mandi')">
+                      <ion-icon name="refresh-circle"></ion-icon>
+                    </button>
+                  <ion-card-title>
+                     <h5>
+                       Doa Masuk Kamar Mandi
+                      </h5>
+                    </ion-card-title>
+                  <p>
+                    اَللّٰهُمَّ اِنِّيْ اَعُوْذُبِكَ مِنَ الْخُبُثِ وَالْخَبَآئِثِ
+                      <br><br>
+                      “Alloohumma Innii A’uudzubka Minal Khubutsi Wal Khobaaitsi”
+                      <br><br>
+                      “Ya Allah, sesungguhnya aku berlindung kepadamu dari segala kejahatan dan kotoran”.
+                  </p>
+
+                </ion-card-content>
+            </ion-card>
+
+        </ion-slide>
+    </ion-slides>
+
+</div>
+
+<div *ngIf="ParamFromPrevious == 'keluar_kamar_mandi'" >
+
+  <ion-slides pager>
+      <ion-slide  >
+       
+          <ion-card>
+              <img class="imgWudhu" src="../../assets/imgs/keluar_kamar_mandi.png"/>
+              <ion-card-content>
+                  <!-- <button ion-button color="secondary" block > Play </button> -->
+                  <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='keluar_kamar_mandi')">
+                    <ion-icon name="play"></ion-icon>
+                  </button>
+                  <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='keluar_kamar_mandi')">
+                    <ion-icon name="refresh-circle"></ion-icon>
+                  </button>
+                <ion-card-title>
+                   <h5>
+                     Doa Keluar Kamar Mandi
+                    </h5>
+                  </ion-card-title>
+                <p>
+                  الْحَمْدُ ِللهِ الَّذِىْ اَذْهَبَ عَنّى اْلاَذَى وَعَافَانِىْ
+                    <br><br>
+                    "Alhamdulillaahil-ladzii Adz-haba ‘Annil-adzaa Wa’aafaanii”
+                    <br><br>
+                    “Dengan mengharap ampunanMu, segala puji milik Allah yang telah menghilangkan kotoran dari badanku dan yang telah menyejahterakan”.
+                </p>
+
+              </ion-card-content>
+          </ion-card>
+
+      </ion-slide>
+  </ion-slides>
+
+</div>
+
 
 </ion-content>

@@ -16,6 +16,7 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 export class DoaHarianExtendPage {
 
   ParamFromPrevious:any;
+  plays = false;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
 
@@ -26,7 +27,6 @@ export class DoaHarianExtendPage {
   }
   ionViewWillEnter(){
    this.ParamFromPrevious = this.navParams.get('goto');
-   alert(this.ParamFromPrevious);
   }
 
 }

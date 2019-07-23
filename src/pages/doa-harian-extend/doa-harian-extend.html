@@ -21,10 +21,10 @@
                   <img class="imgWudhu" src="../../assets/imgs/adab-sebelum-tidur.jpg"/>
                   <ion-card-content>
                       <!-- <button ion-button color="secondary" block > Play </button> -->
-                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='sebelum')">
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='sebelum_tidur')">
                         <ion-icon name="play"></ion-icon>
                       </button>
-                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='sebelum')">
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='sebelum_tidur')">
                         <ion-icon name="refresh-circle"></ion-icon>
                       </button>
                     <ion-card-title>
@@ -57,10 +57,10 @@
                   <img class="imgWudhu" src="../../assets/imgs/bangun_tidur.jpg"/>
                   <ion-card-content>
                       <!-- <button ion-button color="secondary" block > Play </button> -->
-                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='sebelum')">
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='setelah_bangun')">
                         <ion-icon name="play"></ion-icon>
                       </button>
-                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='sebelum')">
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='setelah_bangun')">
                         <ion-icon name="refresh-circle"></ion-icon>
                       </button>
                     <ion-card-title>
@@ -218,6 +218,114 @@
                     "Alhamdulillaahil-ladzii Adz-haba ‘Annil-adzaa Wa’aafaanii”
                     <br><br>
                     “Dengan mengharap ampunanMu, segala puji milik Allah yang telah menghilangkan kotoran dari badanku dan yang telah menyejahterakan”.
+                </p>
+
+              </ion-card-content>
+          </ion-card>
+
+      </ion-slide>
+  </ion-slides>
+
+</div>
+
+<div *ngIf="ParamFromPrevious == 'sesudah_makan'" >
+
+  <ion-slides pager>
+      <ion-slide  >
+       
+          <ion-card>
+              <img class="imgWudhu" src="../../assets/imgs/ngaji3.jpg"/>
+              <ion-card-content>
+                  <!-- <button ion-button color="secondary" block > Play </button> -->
+                  <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='sesudah_makan')">
+                    <ion-icon name="play"></ion-icon>
+                  </button>
+                  <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='sesudah_makan')">
+                    <ion-icon name="refresh-circle"></ion-icon>
+                  </button>
+                <ion-card-title>
+                   <h5>
+                     Doa Sesudah Makan
+                    </h5>
+                  </ion-card-title>
+                <p>
+                  اَلْحَمْدُ ِللهِ الَّذِيْنَ اَطْعَمَنَا وَسَقَانَا وَجَعَلَنَا مِنَ الْمُسْلِمِيْنَ
+                    <br><br>
+                    "Alhamdu lillahhil-ladzi ath-amanaa wa saqaana waja’alanaa minal muslimiin”
+                    <br><br>
+                    “Segala puji bagi Allah yang telah memberi kami makan dan minum serta menjadikan kami termasuk golongan orang muslim”.
+                </p>
+
+              </ion-card-content>
+          </ion-card>
+
+      </ion-slide>
+  </ion-slides>
+
+</div>
+
+<div *ngIf="ParamFromPrevious == 'sebelum_makan'" >
+
+  <ion-slides pager>
+      <ion-slide  >
+       
+          <ion-card>
+              <img class="imgWudhu" src="../../assets/imgs/ngaji3.jpg"/>
+              <ion-card-content>
+                  <!-- <button ion-button color="secondary" block > Play </button> -->
+                  <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='sebelum_makan')">
+                    <ion-icon name="play"></ion-icon>
+                  </button>
+                  <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='sebelum_makan')">
+                    <ion-icon name="refresh-circle"></ion-icon>
+                  </button>
+                <ion-card-title>
+                   <h5>
+                     Doa Sebelum Makan
+                    </h5>
+                  </ion-card-title>
+                <p>
+                  اَللَّهُمَّ بَارِكْ لَنَا فِيْمَا رَزَقْتَنَا وَقِنَا عَذَابَ النَّارِ
+                    <br><br>
+                    "Alaahumma barik lanaa fiimaa razaqtanaa waqinaa ‘adzaa bannar”
+                    <br><br>
+                    “Ya Allah, berkahilah untukku dalam sesuatu yang Engkau rezekikan kepadaku, dan peliharalah aku dari siksa neraka”.
+                </p>
+
+              </ion-card-content>
+          </ion-card>
+
+      </ion-slide>
+  </ion-slides>
+
+</div>
+
+<div *ngIf="ParamFromPrevious == 'bepergian'" >
+
+  <ion-slides pager>
+      <ion-slide  >
+       
+          <ion-card>
+              <img class="imgWudhu" src="../../assets/imgs/naik_kendaraan.jpg"/>
+              <ion-card-content>
+                  <!-- <button ion-button color="secondary" block > Play </button> -->
+                  <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='bepergian')">
+                    <ion-icon name="play"></ion-icon>
+                  </button>
+                  <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='bepergian')">
+                    <ion-icon name="refresh-circle"></ion-icon>
+                  </button>
+                <ion-card-title>
+                   <h5>
+                     Doa Ketika Bepergian
+                    </h5>
+                  </ion-card-title>
+                <p>
+                  اللَّهُمَّ أَنْتَ الصَّاحِبُ فِى السَّفَرِ وَالْخَلِيفَةُ فِى الأَهْلِ اللَّهُمَّ إِنِّى أَعُوذُ بِكَ مِنْ وَعْثَاءِ السَّفَرِ وَكَآبَةِ الْمَنْظَرِ وَسُوءِ الْمُنْقَلَبِ فِى الْمَالِ وَالأَهْلِ
+                    <br><br>
+                    "Allahumma antash shoohibu fis safar, wal kholiifatu fil ahli. Allahumma inni a’udzubika min wa’tsaa-is safari wa ka-aabatil manzhori wa suu-il munqolabi fil maali wal ahli.”
+                    <br><br>
+                    “Ya Allah, Engkau adalah teman dalam perjalanan dan pengganti dalam keluarga. Ya Allah, aku berlindung kepada-Mu dari kesulitan perjalanan, kesedihan tempat kembali, doa orang yang teraniaya, dan dari pandangan yang menyedihkan dalam keluarga dan harta.”.
                 </p>
 
               </ion-card-content>

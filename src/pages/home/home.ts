@@ -5,16 +5,13 @@ import { SholatPage } from './../sholat/sholat';
 import { DoaharianPage } from './../doaharian/doaharian';
 import { AlquranPage } from './../alquran/alquran';
 import { AngularFireDatabase } from '@angular/fire/database';
-import { Observable } from 'rxjs/Observable';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-  items: Observable<any[]>;
   constructor(public navCtrl: NavController,public database:AngularFireDatabase) {
-    this.items = database.list('historySender').valueChanges();
   }
 
   goTo(page){

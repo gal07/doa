@@ -1,15 +1,65 @@
 <!--
-  Generated template for the SholatPage page.
+  Generated template for the DoaharianPage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
 <ion-header>
   <ion-navbar>
-    <ion-title>sholat</ion-title>
+    <ion-title>Tuntunan Sholat Fardhu</ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
+<ion-content padding class="pp">
+
+    <ion-list>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../../assets/imgs/adab-sebelum-tidur.jpg">
+          </ion-thumbnail>
+          <p class="text-doa-harian center">Sholat Subuh</p>
+          <button ion-button block color="primary" (click)="Go(value='Sholat Subuh')">See Full</button>
+        </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../../assets/imgs/bangun_tidur.jpg">
+          </ion-thumbnail>
+          <p class="text-doa-harian center">Sholat Zuhur</p>
+          <button ion-button block color="primary" (click)="Go(value='Sholat Zuhur')">See Full</button>
+        </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../../assets/imgs/doa_keluar_rumah.jpg">
+          </ion-thumbnail>
+          <p class="text-doa-harian center">Sholat Ashar</p>
+          <button ion-button block color="primary" (click)="Go(value='Sholat Ashar')">See Full</button>
+        </ion-item>
+    </ion-list>
+
+    <ion-list>
+        <ion-item>
+          <ion-thumbnail item-start>
+            <img src="../../assets/imgs/doa_masuk_rumah.jpg">
+          </ion-thumbnail>
+          <p class="text-doa-harian center">Sholat Maghrib</p>
+          <button ion-button block color="primary" (click)="Go(value='Sholat Maghrib')">See Full</button>
+        </ion-item>
+    </ion-list>
+
+    <ion-list>
+      <ion-item>
+        <ion-thumbnail item-start>
+          <img src="../../assets/imgs/masuk_kamar_mandi.jpg">
+        </ion-thumbnail>
+        <p class="text-doa-harian center">Sholat Isya</p>
+        <button ion-button block color="primary" (click)="Go(value='Sholat Isya')">See Full</button>
+      </ion-item>
+    </ion-list>
 
 </ion-content>

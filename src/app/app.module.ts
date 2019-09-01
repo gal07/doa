@@ -13,6 +13,7 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AlquranPage } from './../pages/alquran/alquran';
 import { DoaharianPage } from './../pages/doaharian/doaharian';
+import { SholatExtendPage } from './../pages/sholat-extend/sholat-extend';
 import { SholatPage } from './../pages/sholat/sholat';
 import { WudhuPage } from './../pages/wudhu/wudhu';
 import { DoaHarianExtendPage } from "../pages/doa-harian-extend/doa-harian-extend";
@@ -35,7 +36,8 @@ export const firebaseConfig = {
     DoaharianPage,
     SholatPage,
     WudhuPage,
-    DoaHarianExtendPage
+    DoaHarianExtendPage,
+    SholatExtendPage
   ],
   imports: [
     BrowserModule,
@@ -52,7 +54,8 @@ export const firebaseConfig = {
     DoaharianPage,
     SholatPage,
     WudhuPage,
-    DoaHarianExtendPage
+    DoaHarianExtendPage,
+    SholatExtendPage
   ],
   providers: [
     StatusBar,

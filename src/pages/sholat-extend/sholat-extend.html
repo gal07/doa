@@ -1,0 +1,196 @@
+<!--
+  Generated template for the SholatExtendPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ ParamFromPrevious }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding class="pp">
+
+  <div *ngIf="ParamFromPrevious == 'Sholat Subuh'" > 
+  
+      <ion-slides pager>
+          <ion-slide  >
+           
+              <ion-card>
+                  <img class="imgWudhu" src="../../assets/imgs/adab-sebelum-tidur.jpg"/>
+                  <ion-card-content>
+                      <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='subuh')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='subuh')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
+                    <ion-card-title>
+                       <h5>
+                         Niat {{ ParamFromPrevious }}
+                        </h5>
+                      </ion-card-title>
+                    <p>
+                      اُصَلّى فَرْضَ الصُّبْحِ رَكْعَتَيْنِ مُسْتَقْبِلَ الْقِبْلَةِ اَدَاءً ِللهِ تَعَالَى
+                        <br><br>
+                        “Usholli Fardhol Shubhi Rok’atainiI Mustaqbilal Qiblati Adaa’an Imaaman Lillahi Ta’aaLa”
+                        <br><br>
+                        “Aku berniat (Melaksanakan) shalat Fardhu Subuh (Sebanyak) dua rakaat menghadap kiblat (Semata-mata) karena Allah Ta’ala”.
+                    </p>
+  
+                  </ion-card-content>
+              </ion-card>
+  
+          </ion-slide>
+      </ion-slides>
+    
+  </div>
+
+  <div *ngIf="ParamFromPrevious == 'Sholat Zuhur'" >
+
+      <ion-slides pager>
+          <ion-slide  >
+           
+              <ion-card>
+                  <img class="imgWudhu" src="../../assets/imgs/bangun_tidur.jpg"/>
+                  <ion-card-content>
+                      <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='zuhur')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='zuhur')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
+                    <ion-card-title>
+                       <h5>
+                        Niat {{ ParamFromPrevious }}
+                        </h5>
+                      </ion-card-title>
+                    <p>
+                      اُصَلِّى فَرْضَ الظُّهْرِاَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ اَدَاءً ِللهِ تَعَالَى
+                        <br><br>
+                        “Ushalli fardhodl dhuhri arba’a raka’aatim mustaqbilal qiblati adaan lillahi ta’aala”
+                        <br><br>
+                        “Aku berniat shalat fardhu Dzuhur empat rakaat menghadap kiblat karena Allah Ta’ala”.
+                    </p>
+  
+                  </ion-card-content>
+              </ion-card>
+  
+          </ion-slide>
+      </ion-slides>
+
+  </div>
+
+  <div *ngIf="ParamFromPrevious == 'Sholat Ashar'" >
+
+      <ion-slides pager>
+          <ion-slide  >
+           
+              <ion-card>
+                  <img class="imgWudhu" src="../../assets/imgs/doa_keluar_rumah.jpg"/>
+                  <ion-card-content>
+                      <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='ashar')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='ashar')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
+                    <ion-card-title>
+                       <h5>
+                        Niat {{ ParamFromPrevious }}
+                        </h5>
+                      </ion-card-title>
+                    <p>
+                      اُصَلّى فَرْضَ الْعَصْرِاَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ اَدَاءً ِللهِ تَعَالَى
+                        <br><br>
+                        “USHALLII FARDHAL ‘ASHRI ARBA’A RAKA’AATIN MUSTAQBILAL QIBLATI ADAA-AN LILLAAHI TA’AALA”
+                        <br><br>
+                        “Aku berniat shalat fardhu Ashar empat rakaat menghadap kiblat karena Allah Ta’ala”.
+                    </p>
+  
+                  </ion-card-content>
+              </ion-card>
+  
+          </ion-slide>
+      </ion-slides>
+
+  </div>
+
+  <div *ngIf="ParamFromPrevious == 'Sholat Maghrib'" >
+
+      <ion-slides pager>
+          <ion-slide  >
+           
+              <ion-card>
+                  <img class="imgWudhu" src="../../assets/imgs/doa_masuk_rumah.jpg"/>
+                  <ion-card-content>
+                      <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='maghrib')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='maghrib')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
+                    <ion-card-title>
+                       <h5>
+                        Niat {{ ParamFromPrevious }}
+                        </h5>
+                      </ion-card-title>
+                    <p>
+                      أُصَلِّىْ فَرْضَ المَغْرِبِ ثَلَاثَرَكَعَاتٍ مُسْتَقْبِلَ الْكِبْلَةِ اَدَاءًلِلهِ تَعَا لَى
+                        <br><br>
+                        “Ushallii fardhal maghribi tsalaatsa raka’aatin mustaqbilal qiblati adaa’an lillaahita’aalaa”
+                        <br><br>
+                        “Aku berniat shalat fardhu magrib tiga raka’at, menghadap kiblat karena allah ta’ala.”.
+                    </p>
+  
+                  </ion-card-content>
+              </ion-card>
+  
+          </ion-slide>
+      </ion-slides>
+
+  </div>
+
+  <div *ngIf="ParamFromPrevious == 'Sholat Isya'" >
+
+    <ion-slides pager>
+        <ion-slide  >
+         
+            <ion-card>
+                <img class="imgWudhu" src="../../assets/imgs/masuk_kamar_mandi.jpg"/>
+                <ion-card-content>
+                    <!-- <button ion-button color="secondary" block > Play </button> -->
+                    <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='isya')">
+                      <ion-icon name="play"></ion-icon>
+                    </button>
+                    <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='isya')">
+                      <ion-icon name="refresh-circle"></ion-icon>
+                    </button>
+                  <ion-card-title>
+                     <h5>
+                      Niat {{ ParamFromPrevious }}
+                      </h5>
+                    </ion-card-title>
+                  <p>
+                    اُصَلِّى فَرْضَ الْعِشَاءِ اَرْبَعَ رَكَعَاتٍ مُسْتَقْبِلَ الْقِبْلَةِ اَدَاءً ِللهِ تَعَالَى
+                      <br><br>
+                      “Ushalli fardhol ‘isyaa-i arba’a raka’aatim mustaqbilal qiblati adaa-an lillaahi ta’aala”
+                      <br><br>
+                      “Aku berniat shalat fardhu Isya empat raka’at menghadap kiblat karena Allah Ta’ala”.
+                  </p>
+
+                </ion-card-content>
+            </ion-card>
+
+        </ion-slide>
+    </ion-slides>
+
+</div>
+
+</ion-content>
+

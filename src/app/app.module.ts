@@ -18,6 +18,7 @@ import { SholatPage } from './../pages/sholat/sholat';
 import { WudhuPage } from './../pages/wudhu/wudhu';
 import { DoaHarianExtendPage } from "../pages/doa-harian-extend/doa-harian-extend";
 import { MediaPlayProvider } from '../providers/media-play/media-play';
+import { OnOrOffProvider } from '../providers/on-or-off/on-or-off';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyC7Hi9Ft_K0MmOdbP6tsg5YksP4F6nORHE",
@@ -63,7 +64,8 @@ export const firebaseConfig = {
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     NativeAudio,
     MediaPlayProvider,
-    AngularFireDatabase
+    AngularFireDatabase,
+    OnOrOffProvider
   ]
 })
 export class AppModule {}

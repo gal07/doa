@@ -1,17 +1,25 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,Platform} from 'ionic-angular';
 import { WudhuPage } from './../wudhu/wudhu';
 import { SholatPage } from './../sholat/sholat';
 import { DoaharianPage } from './../doaharian/doaharian';
 import { AlquranPage } from './../alquran/alquran';
 import { AngularFireDatabase } from '@angular/fire/database';
+import { OnOrOffProvider } from './../../providers/on-or-off/on-or-off';
 
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'
 })
 export class HomePage {
-  constructor(public navCtrl: NavController,public database:AngularFireDatabase) {
+  constructor(public navCtrl: NavController,public database:AngularFireDatabase, private onOff: OnOrOffProvider, platform: Platform) {
+
+    let on = this.onOff.on_or_off();
+    if (on == 0) {
+      platform.exitApp()
+      alert("Exit")
+    }
+
   }
 
   goTo(page){

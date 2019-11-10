@@ -28,6 +28,12 @@ export class SholatExtendPage {
       this.medias.preLoad('ashar','assets/sounds/niat_sholat/ashar.mp3');
       this.medias.preLoad('maghrib','assets/sounds/niat_sholat/maghrib.mp3');
       this.medias.preLoad('isya','assets/sounds/niat_sholat/isya.mp3');
+      this.medias.preLoad('iftitah','assets/sounds/sholat/Doa_Iftitah.mp3');
+      this.medias.preLoad('alfatihah','assets/sounds/sholat/Al_Fatihah.mp3');
+      this.medias.preLoad('ruku','assets/sounds/sholat/Doa_Ruku.mp3');
+      this.medias.preLoad('iktidal','assets/sounds/sholat/Doa_Bangun_Dari_Ruku.mp3');
+      this.medias.preLoad('sujud','assets/sounds/sholat/Doa_Sujud.mp3');
+      this.medias.preLoad('iftirasy','assets/sounds/sholat/Doa_Duduk_DiAntara_Dua_Sujud.mp3');
       // this.medias.preLoad('sebelum','assets/sounds/Doa_ziarah_kubur.mp3');
 
     });

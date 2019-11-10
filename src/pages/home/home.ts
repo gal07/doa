@@ -14,12 +14,7 @@ import { OnOrOffProvider } from './../../providers/on-or-off/on-or-off';
 export class HomePage {
   constructor(public navCtrl: NavController,public database:AngularFireDatabase, private onOff: OnOrOffProvider, platform: Platform) {
 
-    let on = this.onOff.on_or_off();
-    if (on == 0) {
-      platform.exitApp()
-      alert("Exit")
-    }
-
+  
   }
 
   goTo(page){

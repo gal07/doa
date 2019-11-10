@@ -50,6 +50,12 @@
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/1.png"/>
                 <ion-card-content>
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='membasuh_telapak_tangan')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='membasuh_telapak_tangan')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
                   <ion-card-title>
                      <h5>1. Mencuci kedua telapak tangan sebanyak tiga kali
                       </h5>
@@ -68,6 +74,12 @@
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/2.png"/>
                 <ion-card-content>
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='berkumur')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='berkumur')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
                   <ion-card-title>
                     <h5>2. Berkumur
                       </h5>
@@ -86,6 +98,12 @@
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/3.png"/>
                 <ion-card-content>
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='hidung')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='hidung')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
                   <ion-card-title>
                     <h5>3. Membasuh hidung
                       </h5>
@@ -104,6 +122,12 @@
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/4.png"/>
                 <ion-card-content>
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='muka')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='muka')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
                   <ion-card-title>
                     <h5>4. Membasuh Muka
                       </h5>
@@ -123,6 +147,12 @@
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/5.png"/>
                 <ion-card-content>
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='tangan')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='tangan')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
                   <ion-card-title>
                     <h5>5. Membasuh kedua tangan
                       </h5>
@@ -143,6 +173,12 @@
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/6.png"/>
                 <ion-card-content>
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='kepala')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='kepala')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
                   <ion-card-title>
                     <h5>6.  Membasuh kepala mulai dari ubun-ubun
                       </h5>
@@ -162,6 +198,12 @@
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/7.png"/>
                 <ion-card-content>
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='telinga')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='telinga')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
                   <ion-card-title>
                     <h5>7. Membasuh keduan telinga
                       </h5>
@@ -181,6 +223,12 @@
             <ion-card>
                 <img class="imgWudhu" src="../../assets/imgs/wudhu/8.png"/>
                 <ion-card-content>
+                      <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(value='kaki')">
+                        <ion-icon name="play"></ion-icon>
+                      </button>
+                      <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(value='kaki')">
+                        <ion-icon name="refresh-circle"></ion-icon>
+                      </button>
                   <ion-card-title>
                     <h5>8. Mencuci kedua kaki
                       </h5>

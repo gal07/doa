@@ -23,15 +23,15 @@ export class DoaHarianExtendPage {
   constructor(public navCtrl: NavController, public navParams: NavParams,public platform:Platform,public medias:MediaPlayProvider) {
 
     platform.ready().then(()=>{
-      this.medias.preLoad('sebelum_tidur','assets/sounds/Doa_bangun_tidur.mp3');
+      this.medias.preLoad('sebelum_tidur','assets/sounds/Sebelum_tidur.mp3');
       this.medias.preLoad('setelah_bangun','assets/sounds/Doa_bangun_tidur.mp3');
-      this.medias.preLoad('keluar_kamar_mandi','assets/sounds/Doa_keluar_kamar_mandi.mp3');
+      this.medias.preLoad('keluar_kamar_mandi','assets/sounds/Keluar_kamar_mandi.mp3');
       this.medias.preLoad('keluar_rumah','assets/sounds/Doa_keluar_rumah.mp3');
       this.medias.preLoad('masuk_kamar_mandi','assets/sounds/Doa_masuk_kamar_mandi.mp3');
       this.medias.preLoad('masuk_rumah','assets/sounds/Doa_masuk_rumah.mp3');
       this.medias.preLoad('bepergian','assets/sounds/Doa_naik_kendaraan_dan_bepergian.mp3');
-      this.medias.preLoad('sebelum_makan','assets/sounds/Doa_sebelum_makan.mp3');
-      this.medias.preLoad('sesudah_makan','assets/sounds/Doa_setelah_makan.mp3');
+      this.medias.preLoad('sebelum_makan','assets/sounds/Sebelum_makan.mp3');
+      this.medias.preLoad('sesudah_makan','assets/sounds/Sesudah_makan.mp3');
       // this.medias.preLoad('sebelum','assets/sounds/Doa_ziarah_kubur.mp3');
 
     });

@@ -34,6 +34,8 @@ export class SholatExtendPage {
       this.medias.preLoad('iktidal','assets/sounds/sholat/Doa_Bangun_Dari_Ruku.mp3');
       this.medias.preLoad('sujud','assets/sounds/sholat/Doa_Sujud.mp3');
       this.medias.preLoad('iftirasy','assets/sounds/sholat/Doa_Duduk_DiAntara_Dua_Sujud.mp3');
+      this.medias.preLoad('tasyahud_awal','assets/sounds/sholat/Tasyahud_awal.mp3');
+      this.medias.preLoad('tasyahud_akhir','assets/sounds/sholat/Tasyahud_akhir.mp3');
       // this.medias.preLoad('sebelum','assets/sounds/Doa_ziarah_kubur.mp3');
 
     });
@@ -55,7 +57,14 @@ export class SholatExtendPage {
     this.medias.unLoad('ashar');
     this.medias.unLoad('maghrib');
     this.medias.unLoad('isya');
-   
+    this.medias.unLoad('iftitah');
+    this.medias.unLoad('alfatihah');
+    this.medias.unLoad('ruku');
+    this.medias.unLoad('iktidal');
+    this.medias.unLoad('sujud');
+    this.medias.unLoad('iftirasy');
+    this.medias.unLoad('tasyahud_awal');
+    this.medias.unLoad('tasyahud_akhir');   
   }
 
   play(param){

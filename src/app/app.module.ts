@@ -12,6 +12,7 @@ import { AngularFireAuthModule } from '@angular/fire/auth';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { AlquranPage } from './../pages/alquran/alquran';
+import { AlquranExtendPage } from './../pages/alquran-extend/alquran-extend';
 import { DoaharianPage } from './../pages/doaharian/doaharian';
 import { SholatExtendPage } from './../pages/sholat-extend/sholat-extend';
 import { SholatPage } from './../pages/sholat/sholat';
@@ -38,7 +39,8 @@ export const firebaseConfig = {
     SholatPage,
     WudhuPage,
     DoaHarianExtendPage,
-    SholatExtendPage
+    SholatExtendPage,
+    AlquranExtendPage
   ],
   imports: [
     BrowserModule,
@@ -56,7 +58,8 @@ export const firebaseConfig = {
     SholatPage,
     WudhuPage,
     DoaHarianExtendPage,
-    SholatExtendPage
+    SholatExtendPage,
+    AlquranExtendPage
   ],
   providers: [
     StatusBar,

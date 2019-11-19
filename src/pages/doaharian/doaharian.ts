@@ -16,7 +16,26 @@ import { DoaHarianExtendPage } from '../doa-harian-extend/doa-harian-extend';
 })
 export class DoaharianPage {
 
+  inputs:string;
+  listdoa:any;
+  valdoa:any;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.setDoa();
+  }
+
+  setDoa(){
+    this.listdoa = [{
+      name : [
+        'Doa Sebelum Tidur',
+        'Doa Bangun Tidur'
+      ],
+      value : [
+        'sebelum_tidur',
+        'bangun_tidur'
+      ]
+    }]
+    console.log(this.listdoa[0])
   }
 
   ionViewDidLoad() {
@@ -27,6 +46,31 @@ export class DoaharianPage {
 
     this.navCtrl.push(DoaHarianExtendPage,{goto:param})
 
+  }
+
+  getItems(ev: any){
+
+     // Reset items back to all of the items
+     this.setDoa();
+
+     // set val to the value of the searchbar
+     const val = ev.target.value;
+ 
+     // if the value is an empty string don't filter the items
+     if (val && val.trim() != '') {
+       this.listdoa = this.listdoa.filter((item) => {
+         return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
+       })
+     }
+   }
+
+
+  onInput(str){
+   console.log(str.target.value)
+  }
+
+  onCancel(str){
+    console.log(str.target.value)
   }
 
 }

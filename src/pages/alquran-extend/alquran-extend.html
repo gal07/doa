@@ -1,0 +1,1525 @@
+<!--
+  Generated template for the AlquranExtendPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar>
+    <ion-title>{{ ParamFromPrevious }}</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+    <div *ngIf="ParamFromPrevious == 'Adh-Dhuhaa'" > 
+  
+        <ion-slides pager>
+            <ion-slide  >
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                        <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(ParamFromPrevious)">
+                          <ion-icon name="play"></ion-icon>
+                        </button>
+                        <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(ParamFromPrevious)">
+                          <ion-icon name="refresh-circle"></ion-icon>
+                        </button>
+                      <ion-card-title>
+                         <h5>
+                           Surat {{ ParamFromPrevious }}
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                        <strong>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</strong>
+                        <br><br>
+                        وَالضُّحٰىۙ
+                          <br><br>
+                          waḍ-ḍuḥā
+                          <br><br>
+                          “Demi waktu duha (ketika matahari naik sepenggalah),”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 2
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَالَّيْلِ اِذَا سَجٰىۙ
+                          <br><br>
+                          wal-laili iżā sajā
+                          <br><br>
+                          "dan demi malam apabila telah sunyi,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 3
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          مَا وَدَّعَكَ رَبُّكَ وَمَا قَلٰىۗ
+                          <br><br>
+                          mā wadda'aka rabbuka wa mā qalā
+                          <br><br>
+                          "Tuhanmu tidak meninggalkan engkau (Muhammad) dan tidak (pula) membencimu,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 4
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَلَلْاٰخِرَةُ خَيْرٌ لَّكَ مِنَ الْاُوْلٰىۗ
+                          <br><br>
+                          wa lal-ākhiratu khairul laka minal-ụlā
+                          <br><br>
+                          "dan sungguh, yang kemudian itu lebih baik bagimu dari yang permulaan."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 5
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَلَسَوْفَ يُعْطِيْكَ رَبُّكَ فَتَرْضٰىۗ
+                          <br><br>
+                          wa lasaufa yu'ṭīka rabbuka fa tarḍā
+                          <br><br>
+                          "Dan sungguh, kelak Tuhanmu pasti memberikan karunia-Nya kepadamu, sehingga engkau menjadi puas."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 6
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          اَلَمْ يَجِدْكَ يَتِيْمًا فَاٰوٰىۖ
+                          <br><br>
+                          a lam yajidka yatīman fa āwā
+                          <br><br>
+                          "Bukankah Dia mendapatimu sebagai seorang yatim, lalu Dia melindungi(mu),"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 7
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَوَجَدَكَ ضَاۤلًّا فَهَدٰىۖ
+                          <br><br>
+                          wa wajadaka ḍāllan fa hadā
+                          <br><br>
+                          "dan Dia mendapatimu sebagai seorang yang bingung, lalu Dia memberikan petunjuk,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 8
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَوَجَدَكَ عَاۤىِٕلًا فَاَغْنٰىۗ
+                          <br><br>
+                          wa wajadaka 'ā`ilan fa agnā
+                          <br><br>
+                          "dan Dia mendapatimu sebagai seorang yang kekurangan, lalu Dia memberikan kecukupan."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 9
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          فَاَمَّا الْيَتِيْمَ فَلَا تَقْهَرْۗ
+                          <br><br>
+                          fa ammal-yatīma fa lā taq-har
+                          <br><br>
+                          "Maka terhadap anak yatim janganlah engkau berlaku sewenang-wenang."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 10
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَاَمَّا السَّاۤىِٕلَ فَلَا تَنْهَرْ
+                          <br><br>
+                          wa ammas-sā`ila fa lā tan-har
+                          <br><br>
+                          "Dan terhadap orang yang meminta-minta janganlah engkau menghardik(nya)."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 11
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَاَمَّا بِنِعْمَةِ رَبِّكَ فَحَدِّثْ
+                          <br><br>
+                          wa ammā bini'mati rabbika fa ḥaddiṡ
+                          <br><br>
+                          "Dan terhadap nikmat Tuhanmu hendaklah engkau nyatakan (dengan bersyukur)."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+        </ion-slides>
+      
+    </div>
+
+
+    <div *ngIf="ParamFromPrevious == 'Al-Aadiyaat'" > 
+  
+        <ion-slides pager>
+            <ion-slide  >
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                        <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(ParamFromPrevious)">
+                          <ion-icon name="play"></ion-icon>
+                        </button>
+                        <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(ParamFromPrevious)">
+                          <ion-icon name="refresh-circle"></ion-icon>
+                        </button>
+                      <ion-card-title>
+                         <h5>
+                           Surat {{ ParamFromPrevious }}
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                        <strong>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</strong>
+                        <br><br>
+                        وَالْعٰدِيٰتِ ضَبْحًاۙ
+                          <br><br>
+                          wal-'ādiyāti ḍab-ḥā
+                          <br><br>
+                          “Demi kuda perang yang berlari kencang terengah-engah,”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 2
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          فَالْمُوْرِيٰتِ قَدْحًاۙ
+                          <br><br>
+                          fal-mụriyāti qad-ḥā
+                          <br><br>
+                          "dan kuda yang memercikkan bunga api (dengan pukulan kuku kakinya),"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 3
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          فَالْمُغِيْرٰتِ صُبْحًاۙ
+                          <br><br>
+                          fal-mugīrāti ṣub-ḥā
+                          <br><br>
+                          "dan kuda yang menyerang (dengan tiba-tiba) pada waktu pagi,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 4
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          فَاَثَرْنَ بِهٖ نَقْعًاۙ
+                          <br><br>
+                          fa aṡarna bihī naq'ā
+                          <br><br>
+                          "sehingga menerbangkan debu,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 5
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          فَوَسَطْنَ بِهٖ جَمْعًاۙ
+                          <br><br>
+                          fa wasaṭna bihī jam'ā
+                          <br><br>
+                          "lalu menyerbu ke tengah-tengah kumpulan musuh,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 6
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          اِنَّ الْاِنْسَانَ لِرَبِّهٖ لَكَنُوْدٌ ۚ
+                          <br><br>
+                          innal-insāna lirabbihī lakanụd
+                          <br><br>
+                          "sungguh, manusia itu sangat ingkar, (tidak bersyukur) kepada Tuhannya,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 7
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَاِنَّهٗ عَلٰى ذٰلِكَ لَشَهِيْدٌۚ
+                          <br><br>
+                          wa innahụ 'alā żālika lasyahīd
+                          <br><br>
+                          "dan sesungguhnya dia (manusia) menyaksikan (mengakui) keingkarannya,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 8
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَاِنَّهٗ لِحُبِّ الْخَيْرِ لَشَدِيْدٌ ۗ
+                          <br><br>
+                          wa innahụ liḥubbil-khairi lasyadīd
+                          <br><br>
+                          "dan sesungguhnya cintanya kepada harta benar-benar berlebihan."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 9
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          اَفَلَا يَعْلَمُ اِذَا بُعْثِرَ مَا فِى الْقُبُوْرِۙ
+                          <br><br>
+                          a fa lā ya'lamu iżā bu'ṡira mā fil-qubụr
+                          <br><br>
+                          "Maka tidakkah dia mengetahui apabila apa yang di dalam kubur dikeluarkan,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 10
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَحُصِّلَ مَا فِى الصُّدُوْرِۙ
+                          <br><br>
+                          wa huṣṣila mā fiṣ-ṣudụr
+                          <br><br>
+                          "dan apa yang tersimpan di dalam dada dilahirkan?"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 11
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          اِنَّ رَبَّهُمْ بِهِمْ يَوْمَىِٕذٍ لَّخَبِيْرٌ
+                          <br><br>
+                          inna rabbahum bihim yauma`iżil lakhabīr
+                          <br><br>
+                          "sungguh, Tuhan mereka pada hari itu Mahateliti terhadap keadaan mereka."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+        </ion-slides>
+      
+    </div>
+
+    
+    <div *ngIf="ParamFromPrevious == 'Al-Ashr'" > 
+  
+        <ion-slides pager>
+            <ion-slide  >
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                        <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(ParamFromPrevious)">
+                          <ion-icon name="play"></ion-icon>
+                        </button>
+                        <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(ParamFromPrevious)">
+                          <ion-icon name="refresh-circle"></ion-icon>
+                        </button>
+                      <ion-card-title>
+                         <h5>
+                           Surat {{ ParamFromPrevious }}
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                        <strong>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</strong>
+                        <br><br>
+                        وَالْعَصْرِۙ
+                          <br><br>
+                          wal-'aṣr
+                          <br><br>
+                          “Demi masa,”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 2
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          اِنَّ الْاِنْسَانَ لَفِيْ خُسْرٍۙ
+                          <br><br>
+                          innal-insāna lafī khusr
+                          <br><br>
+                          "sungguh, manusia berada dalam kerugian,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 3
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          اِلَّا الَّذِيْنَ اٰمَنُوْا وَعَمِلُوا الصّٰلِحٰتِ وَتَوَاصَوْا بِالْحَقِّ ەۙ وَتَوَاصَوْا بِالصَّبْرِ
+                          <br><br>
+                          illallażīna āmanụ wa 'amiluṣ-ṣāliḥāti wa tawāṣau bil-ḥaqqi wa tawāṣau biṣ-ṣabr
+                          <br><br>
+                          "kecuali orang-orang yang beriman dan mengerjakan kebajikan serta saling menasihati untuk kebenaran dan saling menasihati untuk kesabaran."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+        </ion-slides>
+      
+    </div>
+
+    <div *ngIf="ParamFromPrevious == 'Al-Ikhlas'" > 
+  
+        <ion-slides pager>
+            <ion-slide  >
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                        <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(ParamFromPrevious)">
+                          <ion-icon name="play"></ion-icon>
+                        </button>
+                        <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(ParamFromPrevious)">
+                          <ion-icon name="refresh-circle"></ion-icon>
+                        </button>
+                      <ion-card-title>
+                         <h5>
+                           Surat {{ ParamFromPrevious }}
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                        <strong>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</strong>
+                        <br><br>
+                        قُلْ هُوَ اللّٰهُ اَحَدٌۚ
+                          <br><br>
+                          qul huwallāhu aḥad
+                          <br><br>
+                          “Katakanlah (Muhammad), “Dialah Allah, Yang Maha Esa.”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 2
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          اَللّٰهُ الصَّمَدُۚ
+                          <br><br>
+                          allāhuṣ-ṣamad
+                          <br><br>
+                          "Allah tempat meminta segala sesuatu."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 3
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          لَمْ يَلِدْ وَلَمْ يُوْلَدْۙ
+                          <br><br>
+                          lam yalid wa lam yụlad
+                          <br><br>
+                          "(Allah) tidak beranak dan tidak pula diperanakkan."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 4
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَلَمْ يَكُنْ لَّهٗ كُفُوًا اَحَدٌ
+                          <br><br>
+                          wa lam yakul lahụ kufuwan aḥad
+                          <br><br>
+                          "Dan tidak ada sesuatu yang setara dengan Dia.”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+        </ion-slides>
+      
+    </div>
+
+    <div *ngIf="ParamFromPrevious == 'Al-Kaafirun'" > 
+  
+        <ion-slides pager>
+            <ion-slide  >
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                        <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(ParamFromPrevious)">
+                          <ion-icon name="play"></ion-icon>
+                        </button>
+                        <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(ParamFromPrevious)">
+                          <ion-icon name="refresh-circle"></ion-icon>
+                        </button>
+                      <ion-card-title>
+                         <h5>
+                           Surat {{ ParamFromPrevious }}
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                        <strong>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</strong>
+                        <br><br>
+                        قُلْ يٰٓاَيُّهَا الْكٰفِرُوْنَۙ
+                          <br><br>
+                          qul yā ayyuhal-kāfirụn
+                          <br><br>
+                          “Katakanlah (Muhammad), “Wahai orang-orang kafir!”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 2
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          لَآ اَعْبُدُ مَا تَعْبُدُوْنَۙ
+                          <br><br>
+                          lā a'budu mā ta'budụn
+                          <br><br>
+                          "aku tidak akan menyembah apa yang kamu sembah,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 3
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَلَآ اَنْتُمْ عٰبِدُوْنَ مَآ اَعْبُدُۚ
+                          <br><br>
+                          wa lā antum 'ābidụna mā a'bud
+                          <br><br>
+                          "dan kamu bukan penyembah apa yang aku sembah,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 4
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَلَآ اَنَا۠ عَابِدٌ مَّا عَبَدْتُّمْۙ
+                          <br><br>
+                          wa lā ana 'ābidum mā 'abattum
+                          <br><br>
+                          "dan aku tidak pernah menjadi penyembah apa yang kamu sembah,”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 5
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَلَآ اَنْتُمْ عٰبِدُوْنَ مَآ اَعْبُدُۗ
+                          <br><br>
+                          wa lā antum 'ābidụna mā a'bud
+                          <br><br>
+                          "dan kamu tidak pernah (pula) menjadi penyembah apa yang aku sembah.”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 6
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          لَكُمْ دِيْنُكُمْ وَلِيَ دِيْنِ
+                          <br><br>
+                          lakum dīnukum wa liya dīn
+                          <br><br>
+                          "Untukmu agamamu, dan untukku agamaku.”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+        </ion-slides>
+      
+    </div>
+
+    <div *ngIf="ParamFromPrevious == 'Al-Kautsar'" > 
+  
+        <ion-slides pager>
+            <ion-slide  >
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                        <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(ParamFromPrevious)">
+                          <ion-icon name="play"></ion-icon>
+                        </button>
+                        <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(ParamFromPrevious)">
+                          <ion-icon name="refresh-circle"></ion-icon>
+                        </button>
+                      <ion-card-title>
+                         <h5>
+                           Surat {{ ParamFromPrevious }}
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                        <strong>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</strong>
+                        <br><br>
+                        اِنَّآ اَعْطَيْنٰكَ الْكَوْثَرَۗ
+                          <br><br>
+                          innā a'ṭainākal-kauṡar
+                          <br><br>
+                          “Sungguh, Kami telah memberimu (Muhammad) nikmat yang banyak."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 2
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          فَصَلِّ لِرَبِّكَ وَانْحَرْۗ
+                          <br><br>
+                          fa ṣalli lirabbika wan-ḥar
+                          <br><br>
+                          "Maka laksanakanlah salat karena Tuhanmu, dan berkurbanlah (sebagai ibadah dan mendekatkan diri kepada Allah)."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 3
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          اِنَّ شَانِئَكَ هُوَ الْاَبْتَرُ
+                          <br><br>
+                          inna syāni`aka huwal-abtar
+                          <br><br>
+                          "Sungguh, orang-orang yang membencimu dialah yang terputus (dari rahmat Allah)."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+        </ion-slides>
+      
+    </div>
+
+    <div *ngIf="ParamFromPrevious == 'Al-Lahab'" > 
+  
+        <ion-slides pager>
+            <ion-slide  >
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                        <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(ParamFromPrevious)">
+                          <ion-icon name="play"></ion-icon>
+                        </button>
+                        <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(ParamFromPrevious)">
+                          <ion-icon name="refresh-circle"></ion-icon>
+                        </button>
+                      <ion-card-title>
+                         <h5>
+                           Surat {{ ParamFromPrevious }}
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                        <strong>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</strong>
+                        <br><br>
+                        تَبَّتْ يَدَآ اَبِيْ لَهَبٍ وَّتَبَّۗ
+                          <br><br>
+                          tabbat yadā abī lahabiw wa tabb
+                          <br><br>
+                          “Binasalah kedua tangan Abu Lahab dan benar-benar binasa dia!”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 2
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          مَآ اَغْنٰى عَنْهُ مَالُهٗ وَمَا كَسَبَۗ
+                          <br><br>
+                          mā agnā 'an-hu māluhụ wa mā kasab
+                          <br><br>
+                          "Tidaklah berguna baginya hartanya dan apa yang dia usahakan."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 3
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          سَيَصْلٰى نَارًا ذَاتَ لَهَبٍۙ
+                          <br><br>
+                          sayaṣlā nāran żāta lahab
+                          <br><br>
+                          "Kelak dia akan masuk ke dalam api yang bergejolak (neraka)."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 4
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَّامْرَاَتُهٗ ۗحَمَّالَةَ الْحَطَبِۚ
+                          <br><br>
+                          wamra`atuh, ḥammālatal-ḥaṭab
+                          <br><br>
+                          "Dan (begitu pula) istrinya, pembawa kayu bakar (penyebar fitnah).”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 5
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          فِيْ جِيْدِهَا حَبْلٌ مِّنْ مَّسَدٍ
+                          <br><br>
+                          fī jīdihā ḥablum mim masad
+                          <br><br>
+                          "Di lehernya ada tali dari sabut yang dipintal.”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+        </ion-slides>
+      
+    </div>
+
+    <div *ngIf="ParamFromPrevious == 'Al-Mauun'" > 
+  
+        <ion-slides pager>
+            <ion-slide  >
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                        <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(ParamFromPrevious)">
+                          <ion-icon name="play"></ion-icon>
+                        </button>
+                        <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(ParamFromPrevious)">
+                          <ion-icon name="refresh-circle"></ion-icon>
+                        </button>
+                      <ion-card-title>
+                         <h5>
+                           Surat {{ ParamFromPrevious }}
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                        <strong>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</strong>
+                        <br><br>
+                        اَرَءَيْتَ الَّذِيْ يُكَذِّبُ بِالدِّيْنِۗ
+                          <br><br>
+                          a ra`aitallażī yukażżibu bid-dīn
+                          <br><br>
+                          “Tahukah kamu (orang) yang mendustakan agama?”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 2
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          فَذٰلِكَ الَّذِيْ يَدُعُّ الْيَتِيْمَۙ
+                          <br><br>
+                          fa żālikallażī yadu''ul-yatīm
+                          <br><br>
+                          "Maka itulah orang yang menghardik anak yatim,"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 3
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَلَا يَحُضُّ عَلٰى طَعَامِ الْمِسْكِيْنِۗ
+                          <br><br>
+                          wa lā yaḥuḍḍu 'alā ṭa'āmil-miskīn
+                          <br><br>
+                          "dan tidak mendorong memberi makan orang miskin."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 4
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          فَوَيْلٌ لِّلْمُصَلِّيْنَۙ
+                          <br><br>
+                          fa wailul lil-muṣallīn
+                          <br><br>
+                          "Maka celakalah orang yang salat,”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 5
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          الَّذِيْنَ هُمْ عَنْ صَلَاتِهِمْ سَاهُوْنَۙ
+                          <br><br>
+                          allażīna hum 'an ṣalātihim sāhụn
+                          <br><br>
+                          "(yaitu) orang-orang yang lalai terhadap salatnya,”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 6
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          الَّذِيْنَ هُمْ يُرَاۤءُوْنَۙ
+                          <br><br>
+                          allażīna hum yurā`ụn
+                          <br><br>
+                          "yang berbuat ria,”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 7
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَيَمْنَعُوْنَ الْمَاعُوْنَ
+                          <br><br>
+                          wa yamna'ụnal-mā'ụn
+                          <br><br>
+                          "dan enggan (memberikan) bantuan."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+        </ion-slides>
+      
+    </div>
+
+    <div *ngIf="ParamFromPrevious == 'Al-Qadr'" > 
+  
+        <ion-slides pager>
+            <ion-slide  >
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                        <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(ParamFromPrevious)">
+                          <ion-icon name="play"></ion-icon>
+                        </button>
+                        <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(ParamFromPrevious)">
+                          <ion-icon name="refresh-circle"></ion-icon>
+                        </button>
+                      <ion-card-title>
+                         <h5>
+                           Surat {{ ParamFromPrevious }}
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                        <strong>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</strong>
+                        <br><br>
+                        اِنَّآ اَنْزَلْنٰهُ فِيْ لَيْلَةِ الْقَدْرِ
+                          <br><br>
+                          innā anzalnāhu fī lailatil-qadr
+                          <br><br>
+                          “Sesungguhnya Kami telah menurunkannya (Al-Qur'an) pada malam qadar.”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 2
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          وَمَآ اَدْرٰىكَ مَا لَيْلَةُ الْقَدْرِۗ
+                          <br><br>
+                          wa mā adrāka mā lailatul-qadr
+                          <br><br>
+                          "Dan tahukah kamu apakah malam kemuliaan itu?"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 3
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          لَيْلَةُ الْقَدْرِ ەۙ خَيْرٌ مِّنْ اَلْفِ شَهْرٍۗ
+                          <br><br>
+                          lailatul-qadri khairum min alfi syahr
+                          <br><br>
+                          "Malam kemuliaan itu lebih baik daripada seribu bulan."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 4
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          تَنَزَّلُ الْمَلٰۤىِٕكَةُ وَالرُّوْحُ فِيْهَا بِاِذْنِ رَبِّهِمْۚ مِنْ كُلِّ اَمْرٍۛ
+                          <br><br>
+                          tanazzalul-malā`ikatu war-rụḥu fīhā bi`iżni rabbihim, ming kulli amr
+                          <br><br>
+                          "Pada malam itu turun para malaikat dan Ruh (Jibril) dengan izin Tuhannya untuk mengatur semua urusan.”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 5
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          سَلٰمٌ ۛهِيَ حَتّٰى مَطْلَعِ الْفَجْرِ
+                          <br><br>
+                          salāmun hiya ḥattā maṭla'il-fajr
+                          <br><br>
+                          "Sejahteralah (malam itu) sampai terbit fajar.”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+        </ion-slides>
+      
+    </div>
+
+    <div *ngIf="ParamFromPrevious == 'Al-Quraisy'" > 
+  
+        <ion-slides pager>
+            <ion-slide  >
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                        <button *ngIf="plays === false" ion-button icon-only color="primary" (click)="play(ParamFromPrevious)">
+                          <ion-icon name="play"></ion-icon>
+                        </button>
+                        <button *ngIf="plays === true" ion-button icon-only color="danger" (click)="stop(ParamFromPrevious)">
+                          <ion-icon name="refresh-circle"></ion-icon>
+                        </button>
+                      <ion-card-title>
+                         <h5>
+                           Surat {{ ParamFromPrevious }}
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                        <strong>بِسْمِ اللّٰهِ الرَّحْمٰنِ الرَّحِيْمِ</strong>
+                        <br><br>
+                        لِاِيْلٰفِ قُرَيْشٍۙ
+                          <br><br>
+                          li`īlāfi quraīsy
+                          <br><br>
+                          “Karena kebiasaan orang-orang Quraisy,”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+  
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 2
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          اٖلٰفِهِمْ رِحْلَةَ الشِّتَاۤءِ وَالصَّيْفِۚ
+                          <br><br>
+                          īlāfihim riḥlatasy-syitā`i waṣ-ṣaīf
+                          <br><br>
+                          "(yaitu) kebiasaan mereka bepergian pada musim dingin dan musim panas."
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 3
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          فَلْيَعْبُدُوْا رَبَّ هٰذَا الْبَيْتِۙ
+                          <br><br>
+                          falya'budụ rabba hāżal-baīt
+                          <br><br>
+                          "Maka hendaklah mereka menyembah Tuhan (pemilik) rumah ini (Ka‘bah),"
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+            <ion-slide>
+             
+                <ion-card>
+                    <ion-card-content>
+                        <!-- <button ion-button color="secondary" block > Play </button> -->
+                      <ion-card-title>
+                         <h5>
+                            Ayat 4
+                          </h5>
+                        </ion-card-title>
+                      <p>
+                          الَّذِيْٓ اَطْعَمَهُمْ مِّنْ جُوْعٍ ەۙ وَّاٰمَنَهُمْ مِّنْ خَوْفٍ
+                          <br><br>
+                          allażī aṭ'amahum min jụ'iw wa āmanahum min khaụf
+                          <br><br>
+                          "yang telah memberi makanan kepada mereka untuk menghilangkan lapar dan mengamankan mereka dari rasa ketakutan.”
+                      </p>
+    
+                    </ion-card-content>
+                </ion-card>
+    
+            </ion-slide>
+
+  
+        </ion-slides>
+      
+    </div>
+
+</ion-content>

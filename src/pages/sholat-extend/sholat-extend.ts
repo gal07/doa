@@ -36,6 +36,8 @@ export class SholatExtendPage {
       this.medias.preLoad('iftirasy','assets/sounds/sholat/Doa_Duduk_DiAntara_Dua_Sujud.mp3');
       this.medias.preLoad('tasyahud_awal','assets/sounds/sholat/Tasyahud_awal.mp3');
       this.medias.preLoad('tasyahud_akhir','assets/sounds/sholat/Tasyahud_akhir.mp3');
+      this.medias.preLoad('Al-Quraisy','assets/sounds/audio_alquran/Al-Quraisy.mp3');
+
       // this.medias.preLoad('sebelum','assets/sounds/Doa_ziarah_kubur.mp3');
 
     });
@@ -64,7 +66,9 @@ export class SholatExtendPage {
     this.medias.unLoad('sujud');
     this.medias.unLoad('iftirasy');
     this.medias.unLoad('tasyahud_awal');
-    this.medias.unLoad('tasyahud_akhir');   
+    this.medias.unLoad('tasyahud_akhir');  
+    this.medias.unLoad('Al-Quraisy');   
+
   }
 
   play(param){

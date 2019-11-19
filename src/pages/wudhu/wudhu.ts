@@ -40,8 +40,16 @@ export class WudhuPage {
 
   ionViewWillLeave(){
 
-  this.medias.unLoad('sebelum');
-  this.medias.unLoad('setelah');
+    this.medias.unLoad('sebelum');
+    this.medias.unLoad('setelah');
+    this.medias.unLoad('membasuh_telapak_tangan');
+    this.medias.unLoad('berkumur');
+    this.medias.unLoad('hidung');
+    this.medias.unLoad('muka');
+    this.medias.unLoad('tangan');
+    this.medias.unLoad('kepala');
+    this.medias.unLoad('telinga');
+    this.medias.unLoad('kaki');
    
   }
 

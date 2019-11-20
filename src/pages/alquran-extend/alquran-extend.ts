@@ -64,15 +64,13 @@ export class AlquranExtendPage {
   }
 
   play(param){
-    alert(param)
-    // this.plays = true;
-    // this.medias.play(param);
+    this.plays = true;
+    this.medias.play(param);
   }
 
   stop(param){
-    alert(param)
-    // this.plays = false;
-    // this.medias.stop(param);
+    this.plays = false;
+    this.medias.stop(param);
   }
 
 }

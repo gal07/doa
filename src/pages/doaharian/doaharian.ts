@@ -18,6 +18,7 @@ export class DoaharianPage {
 
   inputs:string;
   listdoa:any;
+  listGambar:any;
   valdoa:any;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
@@ -25,16 +26,28 @@ export class DoaharianPage {
   }
 
   setDoa(){
-    this.listdoa = [{
-      name : [
-        'Doa Sebelum Tidur',
-        'Doa Bangun Tidur'
-      ],
-      value : [
-        'sebelum_tidur',
-        'bangun_tidur'
-      ]
-    }]
+    this.listdoa = [
+      'Doa Sebelum Tidur',
+      'Doa Bangun Tidur',
+      'Doa Keluar Rumah',
+      'Doa Masuk Rumah',
+      'Doa Masuk Kamar Mandi',
+      'Doa Keluar Kamar Mandi',
+      'Doa Sebelum Makan',
+      'Doa Sesudah Makan'
+    ]
+   
+   this.listGambar = [
+     '../../assets/imgs/adab-sebelum-tidur.jpg',
+     '../../assets/imgs/bangun_tidur.jpg',
+     '../../assets/imgs/doa_keluar_rumah.jpg',
+     '../../assets/imgs/doa_masuk_rumah.jpg',
+     '../../assets/imgs/masuk_kamar_mandi.jpg',
+     '../../assets/imgs/keluar_kamar_mandi.png',
+     '../../assets/imgs/ngaji3.jpg',
+     '../../assets/imgs/ngaji3.jpg'     
+   ]
+   
     console.log(this.listdoa[0])
   }
 

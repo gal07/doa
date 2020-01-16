@@ -12,54 +12,17 @@
 
 <ion-content padding class="pp">
 
-    <ion-list>
-        <ion-item>
-          <ion-thumbnail item-start>
-            <img src="../../assets/imgs/adab-sebelum-tidur.jpg">
-          </ion-thumbnail>
-          <p class="text-doa-harian center">Sholat Subuh</p>
-          <button ion-button block color="primary" (click)="Go(value='Sholat Subuh')">See Full</button>
-        </ion-item>
-    </ion-list>
-
-    <ion-list>
-        <ion-item>
-          <ion-thumbnail item-start>
-            <img src="../../assets/imgs/bangun_tidur.jpg">
-          </ion-thumbnail>
-          <p class="text-doa-harian center">Sholat Zuhur</p>
-          <button ion-button block color="primary" (click)="Go(value='Sholat Zuhur')">See Full</button>
-        </ion-item>
-    </ion-list>
-
-    <ion-list>
-        <ion-item>
-          <ion-thumbnail item-start>
-            <img src="../../assets/imgs/doa_keluar_rumah.jpg">
-          </ion-thumbnail>
-          <p class="text-doa-harian center">Sholat Ashar</p>
-          <button ion-button block color="primary" (click)="Go(value='Sholat Ashar')">See Full</button>
-        </ion-item>
-    </ion-list>
-
-    <ion-list>
-        <ion-item>
-          <ion-thumbnail item-start>
-            <img src="../../assets/imgs/doa_masuk_rumah.jpg">
-          </ion-thumbnail>
-          <p class="text-doa-harian center">Sholat Maghrib</p>
-          <button ion-button block color="primary" (click)="Go(value='Sholat Maghrib')">See Full</button>
-        </ion-item>
-    </ion-list>
-
-    <ion-list>
-      <ion-item>
-        <ion-thumbnail item-start>
-          <img src="../../assets/imgs/masuk_kamar_mandi.jpg">
-        </ion-thumbnail>
-        <p class="text-doa-harian center">Sholat Isya</p>
-        <button ion-button block color="primary" (click)="Go(value='Sholat Isya')">See Full</button>
-      </ion-item>
-    </ion-list>
-
+  <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
+  <ion-list *ngFor="let item of listSholat;let i = index">
+    <!-- <ion-item *ngFor="let item of listdoa">
+      {{ item }}
+    </ion-item> -->
+    <ion-item>
+      <!-- <ion-thumbnail item-start>
+      <img src="{{listGambar[i]}}">
+      </ion-thumbnail> -->
+    <p class="text-doa-harian">{{ item }}</p>
+      <button ion-button block color="primary" (click)="Go(item)">See Full</button>
+    </ion-item>
+  </ion-list>
 </ion-content>

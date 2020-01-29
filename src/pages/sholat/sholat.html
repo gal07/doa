@@ -14,13 +14,10 @@
 
   <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
   <ion-list *ngFor="let item of listSholat;let i = index">
-    <!-- <ion-item *ngFor="let item of listdoa">
-      {{ item }}
-    </ion-item> -->
     <ion-item>
-      <!-- <ion-thumbnail item-start>
-      <img src="{{listGambar[i]}}">
-      </ion-thumbnail> -->
+      <ion-thumbnail item-start>
+      <img src="../../assets/imgs/sholat4.jpg">
+      </ion-thumbnail>
     <p class="text-doa-harian">{{ item }}</p>
       <button ion-button block color="primary" (click)="Go(item)">See Full</button>
     </ion-item>
